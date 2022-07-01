@@ -13,9 +13,11 @@
         <input id = "passSize" type="text" placeholder="Password Size">
         <button onclick="Clicked()">Generate Password</button>
         <hr>
+        <input type="text" onclick="copyClip('S1')" id = "Le" disabled>
+        <input type="text" onclick="copyClip('S2')" id = "Ri" disabled>
+        <br>
+        <div id="snackBar">Copied to Clipboard</div>
 
-        <input type="text" onclick="copyClip1()" id = "Le">
-        <input type="text" onclick="copyClip2()" id = "Ri">
         <script src="index.js"></script>
         </div>
     </body>
