@@ -9,19 +9,16 @@ html, body {
 }
 .container{
     max-width: 500px;
-
     position: absolute;
     top: 10%;
     left: 20%;
     transform: translate(-50%, -50%);
 }
-#F{
+#F, #L{
     position: absolute;
     width: 354px;
     height: 80px;
     left: 52px;
-    top: 115px;
-
     font-family: 'Karla';
     font-style: normal;
     font-weight: 800;
@@ -29,26 +26,11 @@ html, body {
     line-height: 40px;
     letter-spacing: -0.025em;
     color: #FFFFFF;
+    top: 115px;
 }
-
 #L{
-    position: absolute;
-    width: 354px;
-    height: 80px;
-    left: 52px;
     top: 155px;
-
-    font-family: 'Karla';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 40px;
-
-
-    letter-spacing: -0.025em;
-    
     color: #4ADF86;
-
 }
 
 #M{
@@ -58,7 +40,6 @@ html, body {
     left: 52px;
     top: 215px;
     color: #D5D4D8;
-
 
     font-family: 'jetbrains mono';
     font-style: normal;
@@ -102,16 +83,13 @@ hr{
     height: 0px;
     left: 52px;
     top: 350px;
-
     border: 1px solid #2F3E53;
 }
-#Le{
+#Le, #Ri{
     position: absolute;
     width: 211px;
     height: 39px;
-    left: 52px;
     top: 390px;
-
     background: #273549;
     border-radius: 6px;
     position: absolute;
@@ -120,38 +98,28 @@ hr{
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
-/* identical to box height, or 200% */
-
-text-align: center;
-
-color: #55F991;
+    text-align: center;
+    color: #55F991;
+    left: 52px;
 }
 #Ri{
-    position: absolute;
-    width: 211px;
-    height: 39px;
     left: 287px;
-    top: 390px;
-    
-    background: #273549;
-    border-radius: 6px; 
+}
+#snackBar{
     position: absolute;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-    /* identical to box height, or 200% */
-
+    top: 600px;
+    left: 250px;
+    min-width: 200px;
+    background-color: #434040;
+    color: white;
     text-align: center;
-
-    color: #55F991;
-
-    text-overflow: auto;
-
-    /* Required for text-overflow to do anything */
-    white-space: nowrap;
-    overflow: hidden;
-    
+    border-radius: 5px;
+    padding: 16px;
+    z-index: 1;
+    font-size: 17px;
+    font-family: "jetbrains mono";
+    visibility: hidden;
+}
+#snackBar.show{
+    visibility: visible;
 }
