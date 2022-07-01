@@ -3,6 +3,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 function GetRandom(){
     return characters[Math.floor(Math.random() * characters.length)];
 }
+
 function snackBox(){
     let box = document.getElementById("snackBar")
     box.className = "show"
@@ -10,10 +11,12 @@ function snackBox(){
         box.className = box.className.replace("show", "");
     }, 3000);
 }
+
 function Clicked(){
     let szPass = document.getElementById("passSize").value
     let Pass1 = document.getElementById("Le")
     let Pass2 = document.getElementById("Ri")
+    let Msg = document.getElementById("D")
     let s1 = "", s2 = "";
     if(szPass >= 8){
         for(let i = 0 ; i < szPass ; i++){
@@ -24,6 +27,10 @@ function Clicked(){
         Pass2.value = (s2);
         Pass1.disabled = false;
         Pass2.disabled = false;
+        setTimeout(function(){
+            Msg.className = "show"
+        }, 1000);
+        
     }
     else{
         alert("Password size must be at least 8")
