@@ -9,9 +9,10 @@ html, body {
 }
 .container{
     max-width: 500px;
+
     position: absolute;
     top: 10%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
 #F{
@@ -26,10 +27,7 @@ html, body {
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
-
     letter-spacing: -0.025em;
-
-
     color: #FFFFFF;
 }
 
