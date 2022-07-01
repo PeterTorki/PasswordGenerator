@@ -27,10 +27,13 @@ function copyClip1(){
     Pass1.disabled = false;
     Pass1.select()
     document.execCommand("copy");
-
+    if(Pass1.value != "")
+        alert("Password copied to clipboard")
+    else
+        alert("Please enter a password size")
     //Function to remove selection
     window.getSelection().removeAllRanges();
-    alert("Password copied to clipboard")
+    
     Pass1.disabled = true;
 
 }
@@ -41,6 +44,9 @@ function copyClip2(){
     document.execCommand("copy");
     //Function to remove selection
     window.getSelection().removeAllRanges();
-    alert("Password copied to clipboard")
+    if(Pass2.value != "")
+        alert("Password copied to clipboard")
+    else
+        alert("Please enter a password size")
     Pass2.disabled = true;
 }
