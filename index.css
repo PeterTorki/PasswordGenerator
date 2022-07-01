@@ -33,7 +33,7 @@ html, body {
     color: #4ADF86;
 }
 
-#M{
+#M, #D{
     position: absolute;
     width: 372px;
     height: 28px;
@@ -47,7 +47,16 @@ html, body {
     font-size: 20px;
     line-height: 28px;
     overflow: hidden;
-
+}
+#D{
+    width: 800px;
+    top: 440px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.43);
+    visibility: hidden;
+}
+#D.show{
+    visibility: visible;
 }
 input{
     position: absolute;
