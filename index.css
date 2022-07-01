@@ -2,15 +2,16 @@ html, body {
     display:flex;
     justify-content:center;
     margin: 2% 2% 2% 2%;
+    max-width: 500px;
     padding: 0;
     background: #1F2937;
-    max-width: 500px;
     margin: auto;
 }
 .container{
+    max-width: 500px;
     position: absolute;
     top: 10%;
-    left: 35%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 #F{
