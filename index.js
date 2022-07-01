@@ -10,23 +10,24 @@ function snackBox(){
         box.className = box.className.replace("show", "");
     }, 3000);
 }
-
 function Clicked(){
     let szPass = document.getElementById("passSize").value
     let Pass1 = document.getElementById("Le")
     let Pass2 = document.getElementById("Ri")
     let s1 = "", s2 = "";
-    if(szPass == "")
-        alert("Please enter a password size")
-    
-    for(let i = 0 ; i < szPass ; i++){
-        s1 += GetRandom()
-        s2 += GetRandom()
+    if(szPass >= 8){
+        for(let i = 0 ; i < szPass ; i++){
+            s1 += GetRandom()
+            s2 += GetRandom()
+        }
+        Pass1.value = (s1);
+        Pass2.value = (s2);
+        Pass1.disabled = false;
+        Pass2.disabled = false;
     }
-    Pass1.value = (s1);
-    Pass2.value = (s2);
-    Pass1.disabled = false;
-    Pass2.disabled = false;
+    else{
+        alert("Password size must be at least 8")
+    }
 }
 
 function copyClip(str){
